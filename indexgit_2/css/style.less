@@ -1,0 +1,651 @@
+html{
+	font-size: 16px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+}
+
+button{
+	outline: none;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+	&:focus{
+		text-decoration: none;
+	}
+}
+
+ul{
+	list-style-type: none;
+}
+
+// Основная часть
+// 1 экран
+
+header{
+	position: relative;
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	padding-bottom: 100px;
+
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 97%, 72% 94%, 26% 100%, 0 98%, 0% 35%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 97%, 72% 94%, 26% 100%, 0 98%, 0% 35%, 0 0);
+	&:after{
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(-66deg, rgba(7, 35, 139, .65) 40%, rgba(0, 0, 19, .65)60%);
+		display: block;
+		position: absolute;
+		z-index: 1;
+	}
+}
+
+.nav{
+	height: 60px;
+	z-index: 9;
+}	
+
+.nav__burger{
+	margin-top: 17px;
+	height: auto;
+	cursor: pointer;
+	span{
+		display: block;
+		margin-top: 10px;
+		width: 40px;
+		height: 2px;
+		background: #fff;
+		&:nth-child(1){
+			margin-top: 0;
+		}
+	}
+}
+
+.nav__logo{
+	height: auto;
+}
+
+.nav__lodo__img{
+	text-align: right;
+	width: 47%;
+	float: left;
+	img{
+		height: 60px;
+		width: 60px;
+	}
+}
+
+.nav__logo__p{
+	width: 50%;
+	height: 60px;
+	float: left;
+	span{
+		margin: 0;
+		padding-left: 20px;
+		line-height: 60px;
+		text-align: left;
+		color: #fff;
+		font-size: 0.8125rem;	
+	}
+}
+
+.nav__phone{
+	text-align: right;
+	color: #fff;
+	line-height: 60px;
+	i{
+		margin-right: 10px;
+		text-shadow: 0px 0px 8px rgba(255, 255, 255, .55);
+	}
+	a{
+		color: #fff;
+		font-size: 1.125rem;
+		font-weight: 700;
+		text-shadow: 0px 0px 8px rgba(255, 255, 255, .55);
+	}	
+}
+
+.offer{
+	padding-top: 116px;
+	z-index: 8;
+	h1{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 3.375rem;
+		margin: 0;
+		line-height: 78px;		
+	}
+}
+
+.dop_offer{
+	z-index: 9;
+	padding-top: 60px;
+}
+
+.dop_offer-numb{
+	height: 80px;
+}
+
+.dop_offer__number{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	span{
+		line-height: 30px;
+		font-size: 1.063rem;
+	}
+}
+
+.dop_offer_text{
+	margin-top: 5px;
+	float: left;
+	width: 85%;
+	margin-left: 5%;
+	p{
+		color: #fff;
+		margin: 0;
+		line-height: 20px;
+		font-size: 0.9375rem;
+	}
+}
+
+.button_offer{
+	z-index: 8;
+	padding-top: 50px;
+	button{
+		width: 333px;
+		height: 72px;
+		border-radius: 35px;
+		background: #19bfc9;
+		font-size: 1.188rem;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		span{
+			position: relative;
+			z-index: 6;
+		}
+		&:before{
+			transition: all .4s;
+			content: '';
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: rgba(0, 0, 19, .7);
+			top: 0;
+			left: -50%;
+			position: absolute;
+			z-index: 2;
+		}
+		&:hover{
+			&:before{
+				left: 0%;
+			}
+		}
+	}
+}
+
+// 2 экран
+
+.different_lakes{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
+	overflow: hidden;
+}
+
+.absolut_fon{
+	margin: 0;
+	padding: 0;
+	font-size: 23.81rem;
+	font-weight: 700;
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	z-index: -2;
+	text-transform: uppercase;
+	display: block;
+	color: rgba(116, 166, 172, .15);
+}
+
+.different_lakes__h1{
+	padding-bottom: 80px;
+	h1{
+		margin: 0;
+		font-size: 2.188rem;
+		text-transform: uppercase;
+		font-weight: 700;
+
+	}
+}
+
+.lakes_block{
+	margin-bottom: 70px;
+}
+
+.lakes_block__img{
+	position: relative;
+	float: left;
+	width: 30%;
+	&:after{
+		content: '';
+		top: -13px;
+		left: -13px;
+		width: 195px;
+		height: 195px;
+		display: block;
+		border: 1px dashed #0c2994;
+		position: absolute;
+		border-radius: 50%;	
+	}
+}
+
+.lakes_block__text{
+	float: left;
+	width: 65%;
+	margin-left: 4%;
+	h3{
+		text-transform: uppercase;
+		color: #0c2994;
+		span{
+			display: block;
+			width: 20px;
+			height: 3px;
+			background: #0c2994;
+			margin-top: 7px;
+		}
+	}
+	p{
+		font-size: 0.9375rem;
+	}
+}
+
+.lakes_button_block_right, .lakes_button_block_left{
+	margin-top: 30px;
+}
+
+.lakes_button_block_left{
+	button{
+		color: #19bfc9;
+		border: 1px solid #19bfc9;
+		width: 350px;
+		height: 53px;
+		background: transparent;
+		border-radius: 35px;
+		font-size: 1.153rem;
+		transition: all .5s;
+		overflow: hidden;
+		position: relative;
+		span{
+			z-index: 8;
+			position: relative;
+		}
+		&:before{
+			transition: all .4s;
+			content: '';
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: rgba(0, 0, 19, .7);
+			top: 0;
+			left: -50%;
+			position: absolute;
+			z-index: 2;
+		}
+		&:hover{
+			&:before{
+				left: 0%;
+			}
+		}		
+	}
+}
+
+.lakes_button_block_right{
+	text-align: right;
+	button{
+		color: #fff;
+		background: #19bfc9;
+		width: 350px;
+		height: 53px;
+		border-radius: 35px;
+		font-size: 1.153rem;
+		transition: all .5s;
+		overflow: hidden;
+		position: relative;
+		span{
+			z-index: 8;
+			position: relative;
+		}
+		&:before{
+			transition: all .4s;
+			content: '';
+			display: block;
+			width: 50%;
+			height: 100%;
+			background: rgba(0, 0, 19, .7);
+			top: 0;
+			left: -50%;
+			position: absolute;
+			z-index: 2;
+		}
+		&:hover{
+			&:before{
+				left: 0%;
+			}
+		}		
+	}
+}
+
+// 3 блок - маршрут
+
+.route{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: url(../img/baykal_rise.jpg) no-repeat center center / cover;
+	position: relative;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute; 
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(3, 13, 51, .65); 
+		z-index: 1;
+	}
+}
+
+.route__h1{
+	z-index: 8;
+	h1{
+		margin: 0;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 2.188rem;
+	}
+}
+
+.canvas_box{
+	z-index: 8;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	position: relative;
+	height: 300px;
+}
+
+.canvas_block{
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	cursor: pointer;
+	span{
+		color: #fff;
+		font-size: 0.75rem;
+		position: absolute;
+		top: 170%;
+		left: -100%;
+		width: 120px;
+	}
+	&:nth-child(1){
+		top: 50%;
+		left: 0%;
+	}
+	&:nth-child(2){
+		top: 10%;
+		left: 20%;
+		span{
+			top: -240%;
+		}
+	}
+	&:nth-child(3){
+		top: 60%;
+		left: 40%;
+	}
+	&:nth-child(4){
+		top: 10%;
+		left: 65%;
+		span{
+			top: -200%;
+		}
+	}
+	&:nth-child(5){
+		top: 50%;
+		right: 5%;
+	}
+}
+
+.route_text_block{
+	z-index: 8;
+	background: rgba(255, 255, 255, .65);
+	text-align: center;
+	padding: 40px 90px;
+	h4{
+		margin: 0;
+		font-size: 1.438rem;
+		margin-bottom: 30px;		
+	}
+	p{
+		text-align: left;
+		font-size: 0.9375rem;
+		line-height: 28px;
+	}
+}
+
+// Чего вы можете ожидать от путешествия
+
+.ficha{
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		background: #222634;
+		z-index: -2;
+	}
+}
+
+.ficha__leftBlock{
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.ficha_h{
+	padding-bottom: 40px;
+	h2{
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+.list_accord{
+	ul{
+		margin: 0;
+		padding: 0;	
+		li{
+			position: relative;
+			line-height: 48px;
+			font-weight: 700;
+			cursor: pointer;
+			&:hover{
+				span{
+					height: 100%;
+				}
+			}
+			span{
+				transition: all .4s;
+				bottom: 0;
+				left: -20px;
+				position: absolute;
+				height: 3px;
+				width: 3px;
+				background: #19bfc9;
+				display: block;
+
+			}
+		}
+	}
+}
+
+.ficha_rightBlock{
+	padding-top: 170px;
+	p{
+		line-height: 28px;
+		color: #fff;
+		font-size: 0.9425rem;
+		padding-left: 30px;
+	}
+}
+
+.arc{
+	background: rgba(255, 255, 255, .15);
+	border-radius: 50%;
+	position: absolute;
+}
+
+.arc50{
+	width: 50px;
+	height: 50px;
+	top: 10%;
+	left: 70%;
+	&:nth-child(2){
+		top: 30%;
+		left: 90%;
+	}
+}
+
+.arc100{
+	width: 100px;
+	height: 100px;
+	bottom: 5%;
+	right: 5%;
+}
+
+.arc70{
+	width: 70px;
+	height: 70px;
+	top: 20%;
+	left: 55%;
+}
+
+.arc70_2{
+	width: 70px;
+	height: 70px;
+	top: 60%;
+	left: 80%;
+}
+
+.arc80{
+	width: 80px;
+	height: 80px;
+	top: 70%;
+	left: 60%;
+}
+
+// footer
+
+footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #2e3345;
+}
+
+.logo_footer{
+	height: auto;
+	p{
+		font-size: 1rem;
+		margin: 0;
+		margin-top: 20px;
+		color: #fff;
+	}
+}
+
+.nav_footer{
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			a{
+				color:#fff;
+				line-height: 38px;
+				transition: all .3s;
+				&:hover{
+					color: #19bfc9;
+				}
+			}
+		}
+	}
+}
+
+.footer__social{
+	padding-top: 30px;
+	h5{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+}
+
+.footer__social__soc{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	transition: all .2s;
+	&:nth-child(3){
+		margin-left: 20px;
+	}
+	&:hover{
+		border: 1px solid #19bfc9;
+		color: #19bfc9;
+	}
+}
+
+.footer__phone{
+	text-align: right;
+	i, a{
+		color: #fff;
+		font-weight: 700;
+		font-size: 1.225rem;
+		line-height: 150px;
+	}
+	i{
+		margin-right: 10px;
+	}
+}
+
